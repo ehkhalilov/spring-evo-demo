@@ -48,7 +48,7 @@ public class CustomerServiceImpl implements CustomerService {
             customer1.setAge(customer.getAge());
         }
     }
-
+    // second comment
     @Override
     public void deleteCustomer(Integer customerId) {
         customers.removeIf(customer -> customer.getId().equals(customerId));
