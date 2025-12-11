@@ -32,6 +32,7 @@ public class CustomerController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void addCustomer(@RequestBody Customer customer) {
+        // this comment for github commit
         customerService.addCustomer(customer);
     }
 
