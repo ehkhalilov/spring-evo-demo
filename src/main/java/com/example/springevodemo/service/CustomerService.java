@@ -1,5 +1,6 @@
 package com.example.springevodemo.service;
 
+import com.example.springevodemo.dao.CustomerEntity;
 import com.example.springevodemo.model.Customer;
 
 import java.util.List;
