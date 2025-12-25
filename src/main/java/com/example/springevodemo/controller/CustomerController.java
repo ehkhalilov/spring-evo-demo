@@ -3,6 +3,7 @@ package com.example.springevodemo.controller;
 import com.example.springevodemo.dao.CustomerEntity;
 import com.example.springevodemo.model.Customer;
 import com.example.springevodemo.service.CustomerService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,7 @@ public class CustomerController {
     }
 
     @GetMapping
+    @Operation(summary = "Get all customers")
     public List<Customer> getCustomers() {
         return customerService.getCustomers();
     }

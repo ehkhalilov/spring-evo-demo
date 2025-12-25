@@ -18,4 +18,6 @@ public interface CustomerMapper {
         //
         return firstName.toUpperCase();
     }
+
+    //liquibase
 }
