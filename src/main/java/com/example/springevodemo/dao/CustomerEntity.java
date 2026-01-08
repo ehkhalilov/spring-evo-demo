@@ -21,6 +21,6 @@ public class CustomerEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private LocalDate birthdate;
-    private Double height;
+//    private LocalDate birthdate;
+//    private Double height;
 }

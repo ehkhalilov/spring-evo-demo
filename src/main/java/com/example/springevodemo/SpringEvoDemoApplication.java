@@ -4,10 +4,14 @@ import com.example.springevodemo.model.Account;
 import com.example.springevodemo.model.Customer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 import java.util.Arrays;
 
 @SpringBootApplication
+@EnableScheduling
+@EnableWebSecurity
 public class SpringEvoDemoApplication {
 
     public static void main(String[] args) {
