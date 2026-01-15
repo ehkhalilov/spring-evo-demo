@@ -24,12 +24,12 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Customer> getCustomers() {
         log.info("getCustomers start");
         var customers = customerRepository.findAll();
-        var customer = customerRepository.findById(1).orElseThrow(
-                () -> {
-                    log.error("Customer not found");
-                    return new NotFoundException("Customer not found");
-                }
-        );
+//        var customer = customerRepository.findById(1).orElseThrow(
+//                () -> {
+//                    log.error("Customer not found");
+//                    return new NotFoundException("Customer not found");
+//                }
+//        );
         List<Customer> customerDtos =  customers.stream().map(it ->
                 new Customer(it.getId(), it.getName(), 15))
                 .toList();
